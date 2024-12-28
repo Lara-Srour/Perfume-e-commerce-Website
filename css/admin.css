@@ -1,0 +1,258 @@
+*{
+    margin :0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --bg-color: #ffffff;
+    --main-color: #5c0078;
+    --text-color: #010101 ;
+    --nd-color: #434343;
+    --other-color: #666666;
+    --big-font: 2rem;
+    --h2-font: 1.8rem;
+    --p-font: 1rem;
+}
+
+body{
+     color: var(--bg-color);
+     background-color: var(--bg-color);
+
+}
+
+/*-----header----*/
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    background: var(--bg-color);
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 10%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 14%;
+    transition: all .50s ease;
+    
+}
+
+.logo h2{
+    width: 50%;
+    height: auto; 
+    color: var(--text-color);
+}
+
+.navbar{
+    display: flex; 
+}
+
+.navbar a{
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 500;
+    margin: 10px 22px;
+    transition: all .50s ease;
+
+}
+
+.navbar a:hover{
+    color: var(--main-color);
+
+}
+
+.center-text h2{
+    text-align: center;
+    font-size: var(--h2-font);
+    font-weight: 800;
+    color: var(--text-color);
+    margin-top: 10px;
+}
+
+section{
+    padding: 60px 14% 70px;
+}
+
+
+/*Icons*/
+.h-icons{
+    display: flex;
+    align-items: center;
+}
+
+.h-icons i{
+    font-size: 25px;
+    color: var(--text-color);
+    margin-left: 5px;
+    margin-right: 20px;
+    transition: all .50s ease; 
+}
+
+.h-icons i:hover{
+    transform: translateY(-4px);
+    color: var(--main-color);
+}
+
+/*---admin product page*/
+
+table {
+	width: 100%;
+    margin-bottom: 2rem;
+    table-layout: fixed;
+}
+
+ table thead td {
+	padding: 30px 0;
+	border-bottom: 1px solid #EEEEEE;
+    color: var(--text-color);
+}
+
+table thead td:last-child{
+    text-align: right;
+}
+ table tbody td {
+	padding: 20px 0;
+	border-bottom: 1px solid #EEEEEE;
+    color: var(--text-color);
+}
+
+
+table tbody td:last-child{
+    text-align: right;
+}
+
+ table .img {
+	width: 80px;
+}
+
+
+ table td.price {
+	color: var(--other-color);
+
+}
+
+
+ span{
+	font-size: var(--p-font);
+	color: var(--text-color);
+    
+}
+
+
+ .buttons {
+	text-align: right;
+	padding-bottom: 40px;
+}
+ .buttons a.links,
+ .buttons input[type="submit"] {
+	margin-left: 5px;
+	padding: 12px 20px;
+	background: var(--main-color);
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 30px;
+}
+
+.buttons a.links:hover,
+ .buttons input[type="submit"]:hover {
+	background: var(--nd-color);
+}
+
+/*--order page---*/
+.status-container, .btn-update{
+    background-color: var(--main-color);
+    margin-left: 5px;
+	padding: 12px 20px;
+	background: var(--main-color);
+	font-size: 14px;
+	font-weight: bold; 
+	cursor: pointer;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 30px;
+
+}
+ 
+.status-container:hover ,.btn-update:hover {
+	background: var(--nd-color);
+}
+
+/*---product_info page form*/
+.productInfo-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .container-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+    min-width: 800px; /* Adjust this value as needed */
+  }
+  
+  .product-container {
+    background-color: #fff;
+    padding: 20px;
+    
+  }
+  
+  
+  .product-container form {
+    margin-top: 20px;
+  }
+  
+  .product-container label {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--text-color);
+      
+  }
+  
+  .product-container input[type="text"],
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+  }
+  
+  .product-container .btn-update input[type="submit"]{
+    width: 100%;
+    padding: 0px;
+    border: none;
+    outline: none;
+    background: var(--main-color);
+    color: white;
+    margin-top: 10px;
+    border-radius: 30px;
+    font-weight: bold; 
+    text-align: center;
+
+    
+}
+
+.product-container .btn-update input[type="submit"]:hover{
+    background-color: var(--nd-color);
+}
+
+section{
+    padding: 90px 14% 70px;
+}
